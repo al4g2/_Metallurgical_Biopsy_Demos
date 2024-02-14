@@ -1,0 +1,2287 @@
+{
+    "00": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Pipeline Annotation",
+        "Filter_Name": "PipelineAnnotation",
+        "Filter_Uuid": "{8cc2198b-6a9d-5bf4-b8c0-b0878bb57f10}",
+        "Summary": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Import SWIR in situ data (Section 2.1) of the full tensile test specimen. Arrays have been pre-processed as a dream3d file from the SWIR camera. </p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">General alignment with the CAD target performed with Rotate Sample Reference Frame and Set Origin and Spacing. </p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"
+    },
+    "01": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Read DREAM.3D Data File",
+        "Filter_Name": "DataContainerReader",
+        "Filter_Uuid": "{043cbde5-3878-5718-958f-ae75714df0df}",
+        "InputFile": "C:\\Users\\al4g2\\Documents\\_Metallurgical_Biopsy\\Tensile_Bar_SWIR\\SWIR Arrays.dream3d",
+        "InputFileDataContainerArrayProxy": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "IR Mask Boolean",
+                                    "Object Type": "DataArray<bool>",
+                                    "Path": "/DataContainers/Tensile Bar SWIR/SWIR Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        64,
+                                        80,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Max_Cooling_Rate",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Tensile Bar SWIR/SWIR Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        64,
+                                        80,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Max_Temp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Tensile Bar SWIR/SWIR Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        64,
+                                        80,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Time_Above_Threshold",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Tensile Bar SWIR/SWIR Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        64,
+                                        80,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 2,
+                            "Name": "SWIR Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "Tensile Bar SWIR",
+                    "Type": 0
+                }
+            ]
+        },
+        "OverwriteExistingDataContainers": 0
+    },
+    "02": {
+        "CellAttributeMatrixPath": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Rotate Sample Reference Frame",
+        "Filter_Name": "RotateSampleRefFrame",
+        "Filter_Uuid": "{e25d9b4c-2b37-578c-b1de-cf7032b5ef19}",
+        "RotationAngle": 270,
+        "RotationAxis": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+        },
+        "RotationRepresentationChoice": 0,
+        "RotationTable": {
+            "Column Headers": [
+            ],
+            "DefaultColCount": 3,
+            "DefaultRowCount": 3,
+            "HasDynamicCols": false,
+            "HasDynamicRows": false,
+            "MinColCount": 3,
+            "MinRowCount": 3,
+            "Row Headers": [
+            ],
+            "Table Data": [
+                [
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    1
+                ]
+            ]
+        }
+    },
+    "03": {
+        "ChangeOrigin": 1,
+        "ChangeResolution": 0,
+        "DataContainerName": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Set Origin & Spacing (Image)",
+        "Filter_Name": "SetOriginResolutionImageGeom",
+        "Filter_Uuid": "{6d3a3852-6251-5d2e-b749-6257fd0d8951}",
+        "Origin": {
+            "x": 0,
+            "y": 18,
+            "z": 5
+        },
+        "Spacing": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+        }
+    },
+    "04": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Pipeline Annotation",
+        "Filter_Name": "PipelineAnnotation",
+        "Filter_Uuid": "{8cc2198b-6a9d-5bf4-b8c0-b0878bb57f10}",
+        "Summary": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">This section classifies anomalies within the micro-CT data using Otsu's method (Section 4.0).</p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Grayscale fillhole removes local minima</p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Attribute array calculator subtracts the density array from the fillhole array leaving only the local minima </p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Otsu Multiple Thresholds filter segregates the local minima into a seperate class </p></body></html>"
+    },
+    "05": {
+        "FilterVersion": "2.0.937",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Grayscale Fillhole Image Filter",
+        "Filter_Name": "ITKGrayscaleFillholeImage",
+        "Filter_Uuid": "{54c8dd45-88c4-5d4b-8a39-e3cc595e1cf8}",
+        "FullyConnected": 1,
+        "NewCellArrayName": "TAT Fill Hole",
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "Time_Above_Threshold",
+            "Data Container Name": "Tensile Bar SWIR"
+        }
+    },
+    "06": {
+        "CalculatedArray": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "TAT Pores Light Up",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Attribute Array Calculator",
+        "Filter_Name": "ArrayCalculator",
+        "Filter_Uuid": "{7ff0ebb3-7b0d-5ff7-b9d8-5147031aca10}",
+        "InfixEquation": "TAT Fill Hole-Time_Above_Threshold",
+        "ScalarType": 9,
+        "SelectedAttributeMatrix": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "Units": 1
+    },
+    "07": {
+        "FilterVersion": "2.0.937",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Otsu Multiple Thresholds Image Filter",
+        "Filter_Name": "ITKOtsuMultipleThresholdsImage",
+        "Filter_Uuid": "{6e66563a-edcf-5e11-bc1d-ceed36d8493f}",
+        "LabelOffset": 0,
+        "NewCellArrayName": "TAT Classification",
+        "NumberOfHistogramBins": 128,
+        "NumberOfThresholds": 1,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "TAT Pores Light Up",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "ValleyEmphasis": 0
+    },
+    "08": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "IR Mask Boolean",
+                                    "Object Type": "bool",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Cooling_Rate",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Temp",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "TAT Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "TAT Fill Hole",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "TAT Pores Light Up",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Time_Above_Threshold",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "SWIR Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar SWIR",
+                    "Type": 0
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "09": {
+        "FilterVersion": "2.0.937",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Grayscale Fillhole Image Filter",
+        "Filter_Name": "ITKGrayscaleFillholeImage",
+        "Filter_Uuid": "{54c8dd45-88c4-5d4b-8a39-e3cc595e1cf8}",
+        "FullyConnected": 1,
+        "NewCellArrayName": "CR Fill Hole",
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "Max_Cooling_Rate",
+            "Data Container Name": "Tensile Bar SWIR"
+        }
+    },
+    "10": {
+        "CalculatedArray": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "CR Pores Light Up",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Attribute Array Calculator",
+        "Filter_Name": "ArrayCalculator",
+        "Filter_Uuid": "{7ff0ebb3-7b0d-5ff7-b9d8-5147031aca10}",
+        "InfixEquation": "CR Fill Hole-Max_Cooling_Rate",
+        "ScalarType": 9,
+        "SelectedAttributeMatrix": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "Units": 1
+    },
+    "11": {
+        "FilterVersion": "2.0.937",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Otsu Multiple Thresholds Image Filter",
+        "Filter_Name": "ITKOtsuMultipleThresholdsImage",
+        "Filter_Uuid": "{6e66563a-edcf-5e11-bc1d-ceed36d8493f}",
+        "LabelOffset": 0,
+        "NewCellArrayName": "CR Classification",
+        "NumberOfHistogramBins": 128,
+        "NumberOfThresholds": 1,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "CR Pores Light Up",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "ValleyEmphasis": 0
+    },
+    "12": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CR Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "CR Fill Hole",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "CR Pores Light Up",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "IR Mask Boolean",
+                                    "Object Type": "bool",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Cooling_Rate",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Temp",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "TAT Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Time_Above_Threshold",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "SWIR Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar SWIR",
+                    "Type": 0
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "13": {
+        "FilterVersion": "2.0.937",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Grayscale Fillhole Image Filter",
+        "Filter_Name": "ITKGrayscaleFillholeImage",
+        "Filter_Uuid": "{54c8dd45-88c4-5d4b-8a39-e3cc595e1cf8}",
+        "FullyConnected": 1,
+        "NewCellArrayName": "TP Fill Hole",
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "Max_Temp",
+            "Data Container Name": "Tensile Bar SWIR"
+        }
+    },
+    "14": {
+        "CalculatedArray": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "TP Pores Light Up",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Attribute Array Calculator",
+        "Filter_Name": "ArrayCalculator",
+        "Filter_Uuid": "{7ff0ebb3-7b0d-5ff7-b9d8-5147031aca10}",
+        "InfixEquation": "TP Fill Hole-Max_Temp",
+        "ScalarType": 9,
+        "SelectedAttributeMatrix": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "Units": 1
+    },
+    "15": {
+        "FilterVersion": "2.0.937",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Otsu Multiple Thresholds Image Filter",
+        "Filter_Name": "ITKOtsuMultipleThresholdsImage",
+        "Filter_Uuid": "{6e66563a-edcf-5e11-bc1d-ceed36d8493f}",
+        "LabelOffset": 0,
+        "NewCellArrayName": "TP Classification",
+        "NumberOfHistogramBins": 128,
+        "NumberOfThresholds": 1,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "TP Pores Light Up",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "ValleyEmphasis": 0
+    },
+    "16": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CR Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "IR Mask Boolean",
+                                    "Object Type": "bool",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Cooling_Rate",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Temp",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "TAT Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "TP Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "TP Fill Hole",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "TP Pores Light Up",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Time_Above_Threshold",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "SWIR Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar SWIR",
+                    "Type": 0
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "17": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Pipeline Annotation",
+        "Filter_Name": "PipelineAnnotation",
+        "Filter_Uuid": "{8cc2198b-6a9d-5bf4-b8c0-b0878bb57f10}",
+        "Summary": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">This section creates a mask of the part boundary and isolates the SWIR arrays of the part volume (Section 3.1).</p></body></html>"
+    },
+    "18": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Read DREAM.3D Data File",
+        "Filter_Name": "DataContainerReader",
+        "Filter_Uuid": "{043cbde5-3878-5718-958f-ae75714df0df}",
+        "InputFile": "C:\\Users\\al4g2\\Documents\\_Metallurgical_Biopsy\\Tensile_Bar_CAD\\Tensile_Bar_CAD.dream3d",
+        "InputFileDataContainerArrayProxy": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "FaceAreas",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Tensile Bar CAD TriangleDataContainer/FaceData",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        3
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "FaceNormals",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Tensile Bar CAD TriangleDataContainer/FaceData",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 2,
+                            "Name": "FaceData",
+                            "Type": 2
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "Tensile Bar CAD TriangleDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 2,
+                            "Name": "Tensile Bar CAD Point Cloud",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "Tensile Bar CAD VertexDataContainer",
+                    "Type": 2
+                }
+            ]
+        },
+        "OverwriteExistingDataContainers": 0
+    },
+    "19": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Create Data Array",
+        "Filter_Name": "CreateDataArray",
+        "Filter_Uuid": "{77f392fb-c1eb-57da-a1b1-e7acf9239fb8}",
+        "InitializationRange": {
+            "Max": 0,
+            "Min": 0
+        },
+        "InitializationType": 0,
+        "InitializationValue": "0",
+        "NewArray": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "Array of 0s",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "NumberOfComponents": 1,
+        "ScalarType": 4
+    },
+    "20": {
+        "ConditionalArrayPath": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "IR Mask Boolean",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Replace Value in Array (Conditional)",
+        "Filter_Name": "ConditionalSetValue",
+        "Filter_Uuid": "{47cafe63-83cc-5826-9521-4fb5bea684ef}",
+        "ReplaceValue": 1,
+        "SelectedArrayPath": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "Array of 0s",
+            "Data Container Name": "Tensile Bar SWIR"
+        }
+    },
+    "21": {
+        "FaceAttributeMatrixName": "FaceData",
+        "FaceLabelsArrayName": "FaceLabels",
+        "FeatureAttributeMatrixName": "FaceFeatureData",
+        "FeatureIdsArrayPath": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "Array of 0s",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "FilterVersion": "6.6.274",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Quick Surface Mesh",
+        "Filter_Name": "QuickSurfaceMesh",
+        "Filter_Uuid": "{07b49e30-3900-5c34-862a-f1fb48bad568}",
+        "FixProblemVoxels": 1,
+        "NodeTypesArrayName": "NodeType",
+        "SelectedDataArrayPaths": [
+        ],
+        "SurfaceDataContainerName": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "TriangleDataContainer"
+        },
+        "VertexAttributeMatrixName": "VertexData"
+    },
+    "22": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceAreas",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        3
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceNormals",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CAD TriangleDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "Tensile Bar CAD Point Cloud",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CAD VertexDataContainer",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Array of 0s",
+                                    "Object Type": "int32_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CR Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "IR Mask Boolean",
+                                    "Object Type": "bool",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Cooling_Rate",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Temp",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "TAT Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "TP Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Time_Above_Threshold",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "SWIR Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar SWIR",
+                    "Type": 0
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        2
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceLabels",
+                                    "Object Type": "int32_t",
+                                    "Path": "TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        },
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceFeatureData",
+                            "Type": 6
+                        },
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "NodeType",
+                                    "Object Type": "int8_t",
+                                    "Path": "TriangleDataContainer/VertexData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "VertexData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "TriangleDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                    ],
+                    "Flag": 0,
+                    "Name": "TripleLines",
+                    "Type": 999
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "23": {
+        "FilterVersion": "6.6.274",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Laplacian Smoothing",
+        "Filter_Name": "LaplacianSmoothing",
+        "Filter_Uuid": "{601c4885-c218-5da6-9fc7-519d85d241ad}",
+        "IterationSteps": 1,
+        "Lambda": 0.10000000149011612,
+        "MuFactor": -1.0299999713897705,
+        "QuadPointLambda": 0,
+        "SurfaceMeshFaceLabelsArrayPath": {
+            "Attribute Matrix Name": "FaceData",
+            "Data Array Name": "FaceLabels",
+            "Data Container Name": "TriangleDataContainer"
+        },
+        "SurfaceMeshNodeTypeArrayPath": {
+            "Attribute Matrix Name": "VertexData",
+            "Data Array Name": "NodeType",
+            "Data Container Name": "TriangleDataContainer"
+        },
+        "SurfacePointLambda": 0,
+        "SurfaceQuadPointLambda": 0,
+        "SurfaceTripleLineLambda": 0,
+        "TripleLineLambda": 0,
+        "UseTaubinSmoothing": 0
+    },
+    "24": {
+        "FilterVersion": "1.0.1320",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Extract Internal Surfaces from Triangle Geometry",
+        "Filter_Name": "ExtractInternalSurfacesFromTriangleGeometry",
+        "Filter_Uuid": "{52a069b4-6a46-5810-b0ec-e0693c636034}",
+        "InternalTrianglesName": "InternalTrianglesDataContainer",
+        "NodeTypesArrayPath": {
+            "Attribute Matrix Name": "VertexData",
+            "Data Array Name": "NodeType",
+            "Data Container Name": "TriangleDataContainer"
+        },
+        "TriangleDataContainerName": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "TriangleDataContainer"
+        }
+    },
+    "25": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        2
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceLabels",
+                                    "Object Type": "int32_t",
+                                    "Path": "InternalTrianglesDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        },
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceFeatureData",
+                            "Type": 6
+                        },
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "NodeType",
+                                    "Object Type": "int8_t",
+                                    "Path": "InternalTrianglesDataContainer/VertexData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "VertexData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "InternalTrianglesDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceAreas",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        3
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceNormals",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CAD TriangleDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "Tensile Bar CAD Point Cloud",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CAD VertexDataContainer",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Array of 0s",
+                                    "Object Type": "int32_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CR Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "IR Mask Boolean",
+                                    "Object Type": "bool",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Cooling_Rate",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Temp",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "TAT Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "TP Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Time_Above_Threshold",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "SWIR Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar SWIR",
+                    "Type": 0
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        2
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceLabels",
+                                    "Object Type": "int32_t",
+                                    "Path": "TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        },
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceFeatureData",
+                            "Type": 6
+                        },
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "NodeType",
+                                    "Object Type": "int8_t",
+                                    "Path": "TriangleDataContainer/VertexData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "VertexData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "TriangleDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                    ],
+                    "Flag": 0,
+                    "Name": "TripleLines",
+                    "Type": 999
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "26": {
+        "FilterVersion": "6.6.274",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Generate Triangle Areas",
+        "Filter_Name": "TriangleAreaFilter",
+        "Filter_Uuid": "{a9900cc3-169e-5a1b-bcf4-7569e1950d41}",
+        "SurfaceMeshTriangleAreasArrayPath": {
+            "Attribute Matrix Name": "FaceData",
+            "Data Array Name": "FaceAreas",
+            "Data Container Name": "InternalTrianglesDataContainer"
+        }
+    },
+    "27": {
+        "FilterVersion": "1.0.1320",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Point Sample Triangle Geometry",
+        "Filter_Name": "PointSampleTriangleGeometry",
+        "Filter_Uuid": "{119861c5-e303-537e-b210-2e62936222e9}",
+        "MaskArrayPath": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": ""
+        },
+        "NumberOfSamples": 100000,
+        "ParentGeometry": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": ""
+        },
+        "SamplesNumberType": 0,
+        "SelectedDataArrayPaths": [
+        ],
+        "TriangleAreasArrayPath": {
+            "Attribute Matrix Name": "FaceData",
+            "Data Array Name": "FaceAreas",
+            "Data Container Name": "InternalTrianglesDataContainer"
+        },
+        "TriangleGeometry": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "InternalTrianglesDataContainer"
+        },
+        "UseMask": 0,
+        "VertexAttributeMatrixName": "Vertex Attribute Matrix",
+        "VertexGeometry": "SWIR Point Cloud Representation"
+    },
+    "28": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceAreas",
+                                    "Object Type": "double",
+                                    "Path": "InternalTrianglesDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        2
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceLabels",
+                                    "Object Type": "int32_t",
+                                    "Path": "InternalTrianglesDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        },
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceFeatureData",
+                            "Type": 6
+                        },
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "NodeType",
+                                    "Object Type": "int8_t",
+                                    "Path": "InternalTrianglesDataContainer/VertexData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "VertexData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "InternalTrianglesDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "Vertex Attribute Matrix",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "SWIR Point Cloud Representation",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceAreas",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        3
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceNormals",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CAD TriangleDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "Tensile Bar CAD Point Cloud",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CAD VertexDataContainer",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Array of 0s",
+                                    "Object Type": "int32_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CR Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "IR Mask Boolean",
+                                    "Object Type": "bool",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Cooling_Rate",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Temp",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "TAT Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "TP Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Time_Above_Threshold",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "SWIR Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar SWIR",
+                    "Type": 0
+                },
+                {
+                    "Attribute Matricies": [
+                    ],
+                    "Flag": 2,
+                    "Name": "TripleLines",
+                    "Type": 999
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "29": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Pipeline Annotation",
+        "Filter_Name": "PipelineAnnotation",
+        "Filter_Uuid": "{8cc2198b-6a9d-5bf4-b8c0-b0878bb57f10}",
+        "Summary": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">This section performs registration using ICP to align the SWIR dataset to the CAD file (Section 3.1). </p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Iterative closest point computes a transformation matrix using the surface point clouds of both parts</p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Apply transformation to geometry peforms the transformation on the CT image array</p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"
+    },
+    "30": {
+        "ApplyTransform": 1,
+        "FilterVersion": "1.0.1320",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Iterative Closest Point",
+        "Filter_Name": "IterativeClosestPoint",
+        "Filter_Uuid": "{6c8fb24b-5b12-551c-ba6d-ae2fa7724764}",
+        "Iterations": 100,
+        "MovingVertexGeometry": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "SWIR Point Cloud Representation"
+        },
+        "TargetVertexGeometry": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar CAD VertexDataContainer"
+        },
+        "TransformArrayName": "Transform to CAD",
+        "TransformAttributeMatrixName": "TransformAttributeMatrix"
+    },
+    "31": {
+        "CellAttributeMatrixPath": {
+            "Attribute Matrix Name": "SWIR Attribute Matrix",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar SWIR"
+        },
+        "ComputedTransformationMatrix": {
+            "Attribute Matrix Name": "TransformAttributeMatrix",
+            "Data Array Name": "Transform to CAD",
+            "Data Container Name": "SWIR Point Cloud Representation"
+        },
+        "DataArraySelection": [
+        ],
+        "FilterVersion": "1.0.1320",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Apply Transformation to Geometry",
+        "Filter_Name": "ApplyTransformationToGeometry",
+        "Filter_Uuid": "{c681caf4-22f2-5885-bbc9-a0476abc72eb}",
+        "InterpolationType": 0,
+        "ManualTransformationMatrix": {
+            "Column Headers": [
+            ],
+            "DefaultColCount": 0,
+            "DefaultRowCount": 0,
+            "HasDynamicCols": false,
+            "HasDynamicRows": false,
+            "MinColCount": 0,
+            "MinRowCount": 0,
+            "Row Headers": [
+            ],
+            "Table Data": [
+                [
+                    1,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ]
+        },
+        "RotationAngle": 0,
+        "RotationAxis": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+        },
+        "Scale": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "TransformationMatrixType": 1,
+        "Translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "UseDataArraySelection": 0
+    },
+    "32": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Pipeline Annotation",
+        "Filter_Name": "PipelineAnnotation",
+        "Filter_Uuid": "{8cc2198b-6a9d-5bf4-b8c0-b0878bb57f10}",
+        "Summary": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">The individual erors are measured from the surface point cloud in the SWIR dataset to the triangles in the CAD file using Vertex to Triangle Distances (Section 3.2). </p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"
+    },
+    "33": {
+        "DecimationFreq": 0.10000000149011612,
+        "FilterVersion": "1.0.1320",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Decimate Point Cloud",
+        "Filter_Name": "DecimatePointCloud",
+        "Filter_Uuid": "{5cbd9d8e-e2eb-59e7-be63-6ab9deeed8d2}",
+        "VertexAttrMatPath": {
+            "Attribute Matrix Name": "Vertex Attribute Matrix",
+            "Data Array Name": "",
+            "Data Container Name": "SWIR Point Cloud Representation"
+        }
+    },
+    "34": {
+        "ClosestTriangleIdArrayPath": {
+            "Attribute Matrix Name": "Vertex Attribute Matrix",
+            "Data Array Name": "ClosestTriangleId",
+            "Data Container Name": "SWIR Point Cloud Representation"
+        },
+        "DistancesArrayPath": {
+            "Attribute Matrix Name": "Vertex Attribute Matrix",
+            "Data Array Name": "SWIR Errors",
+            "Data Container Name": "SWIR Point Cloud Representation"
+        },
+        "FilterVersion": "1.0.1320",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Find Vertex to Triangle Distances",
+        "Filter_Name": "FindVertexToTriangleDistances",
+        "Filter_Uuid": "{fcdde553-36b4-5731-bc88-fc499806cb4e}",
+        "TriangleDataContainer": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar CAD TriangleDataContainer"
+        },
+        "TriangleNormalsArrayPath": {
+            "Attribute Matrix Name": "FaceData",
+            "Data Array Name": "FaceNormals",
+            "Data Container Name": "Tensile Bar CAD TriangleDataContainer"
+        },
+        "VertexDataContainer": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "SWIR Point Cloud Representation"
+        }
+    },
+    "35": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        4,
+                                        4
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Transform to CAD",
+                                    "Object Type": "float",
+                                    "Path": "SWIR Point Cloud Representation/TransformAttributeMatrix/",
+                                    "Tuple Dimensions": [
+                                        1
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "TransformAttributeMatrix",
+                            "Type": 13
+                        },
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "ClosestTriangleId",
+                                    "Object Type": "int64_t",
+                                    "Path": "SWIR Point Cloud Representation/Vertex Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        100000
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "SWIR Errors",
+                                    "Object Type": "float",
+                                    "Path": "SWIR Point Cloud Representation/Vertex Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        100000
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "Vertex Attribute Matrix",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "SWIR Point Cloud Representation",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceAreas",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        3
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceNormals",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "Tensile Bar CAD TriangleDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "Tensile Bar CAD Point Cloud",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "Tensile Bar CAD VertexDataContainer",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Array of 0s",
+                                    "Object Type": "int32_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CR Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "IR Mask Boolean",
+                                    "Object Type": "bool",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Cooling_Rate",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Max_Temp",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "TAT Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "TP Classification",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Time_Above_Threshold",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar SWIR/SWIR Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        80,
+                                        64,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "SWIR Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar SWIR",
+                    "Type": 0
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "36": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Write DREAM.3D Data File",
+        "Filter_Name": "DataContainerWriter",
+        "Filter_Uuid": "{3fcd4c43-9d75-5b86-aad4-4441bc914f37}",
+        "OutputFile": "C:/Users/al4g2/Documents/_Metallurgical_Biopsy_Demos/Tensile_Bar_SWIR.dream3d",
+        "WriteTimeSeries": 0,
+        "WriteXdmfFile": 1
+    },
+    "PipelineBuilder": {
+        "Name": "Tensile_Bar_SWIR",
+        "Number_Filters": 37,
+        "Version": 6
+    }
+}

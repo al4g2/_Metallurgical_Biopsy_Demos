@@ -1,0 +1,2057 @@
+{
+    "00": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Pipeline Annotation",
+        "Filter_Name": "PipelineAnnotation",
+        "Filter_Uuid": "{8cc2198b-6a9d-5bf4-b8c0-b0878bb57f10}",
+        "Summary": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Import micro-CT data (Section 2.2) of the extracted section from the tensile test specimen. </p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Micro-CT images were captured with a ZEISS Xradia Versa x-ray machine and imported with the ITK::Import Images filter. </p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman,serif'; font-size:12pt;\"><br /></p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"
+    },
+    "01": {
+        "CellAttributeMatrixName": "CellData",
+        "DataContainerName": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "FilterVersion": "2.0.937",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Import Images (3D Stack)",
+        "Filter_Name": "ITKImportImageStack",
+        "Filter_Uuid": "{cf7d7497-9573-5102-bedd-38f86a6cdfd4}",
+        "ImageDataArrayName": "ImageData",
+        "InputFileListInfo": {
+            "EndIndex": 1014,
+            "FileExtension": "tiff",
+            "FilePrefix": "New tensile piece june_tomo-A_recon_Export_",
+            "FileSuffix": "",
+            "IncrementIndex": 1,
+            "InputPath": "C:\\Users\\al4g2\\Documents\\_Metallurgical_Biopsy\\Tensile_Bar_CT_Partial\\tiff images",
+            "Ordering": 0,
+            "PaddingDigits": 4,
+            "StartIndex": 1
+        },
+        "Origin": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "Spacing": {
+            "x": 0.01882999949157238,
+            "y": 0.01882999949157238,
+            "z": 0.01882999949157238
+        }
+    },
+    "02": {
+        "CellAttributeMatrixPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "CellFeatureAttributeMatrixPath": {
+            "Attribute Matrix Name": "\t",
+            "Data Array Name": "",
+            "Data Container Name": "\t"
+        },
+        "FeatureIdsArrayPath": {
+            "Attribute Matrix Name": "\t",
+            "Data Array Name": "\t",
+            "Data Container Name": "\t"
+        },
+        "FilterVersion": "6.6.274",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Crop Geometry (Image)",
+        "Filter_Name": "CropImageGeometry",
+        "Filter_Uuid": "{baa4b7fe-31e5-5e63-a2cb-0bb9d844cfaf}",
+        "NewDataContainerName": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "NewImageDataContainer"
+        },
+        "RenumberFeatures": 0,
+        "SaveAsNewDataContainer": 0,
+        "UpdateOrigin": 1,
+        "XMax": 750,
+        "XMin": 250,
+        "YMax": 750,
+        "YMin": 250,
+        "ZMax": 1013,
+        "ZMin": 0
+    },
+    "03": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Pipeline Annotation",
+        "Filter_Name": "PipelineAnnotation",
+        "Filter_Uuid": "{8cc2198b-6a9d-5bf4-b8c0-b0878bb57f10}",
+        "Summary": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">This section creates a mask of the part boundary and isolates the density of the part volume (Section 3.1).</p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Gradient Magnitude highlights the gradient in the part</p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Robust Automatic Threshold creates a boolean array (mask) of the part</p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Isolate larget feature fills holes in the boolean mask of the part</p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"
+    },
+    "04": {
+        "FilterVersion": "2.0.937",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Median Image Filter",
+        "Filter_Name": "ITKMedianImage",
+        "Filter_Uuid": "{cc27ee9a-9946-56ad-afd4-6e98b71f417d}",
+        "NewCellArrayName": "Median Density",
+        "Radius": {
+            "x": 2,
+            "y": 2,
+            "z": 1
+        },
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "ImageData",
+            "Data Container Name": "Tensile Bar CT Partial"
+        }
+    },
+    "05": {
+        "FilterVersion": "2.0.937",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Gradient Magnitude Image Filter",
+        "Filter_Name": "ITKGradientMagnitudeImage",
+        "Filter_Uuid": "{3aa99151-e722-51a0-90ba-71e93347ab09}",
+        "NewCellArrayName": "Gradient Magnitude",
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "ImageData",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "UseImageSpacing": 1
+    },
+    "06": {
+        "FeatureIdsArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "CT Mask",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "FilterVersion": "1.0.1320",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Robust Automatic Threshold",
+        "Filter_Name": "RobustAutomaticThreshold",
+        "Filter_Uuid": "{3062fc2c-76b2-5c50-92b7-edbbb424c41d}",
+        "GradientMagnitudeArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "Gradient Magnitude",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "InputArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "Median Density",
+            "Data Container Name": "Tensile Bar CT Partial"
+        }
+    },
+    "07": {
+        "FillHoles": 1,
+        "FilterVersion": "6.6.274",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Isolate Largest Feature (Identify Sample)",
+        "Filter_Name": "IdentifySample",
+        "Filter_Uuid": "{0e8c0818-a3fb-57d4-a5c8-7cb8ae54a40a}",
+        "GoodVoxelsArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "CT Mask",
+            "Data Container Name": "Tensile Bar CT Partial"
+        }
+    },
+    "08": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Create Data Array",
+        "Filter_Name": "CreateDataArray",
+        "Filter_Uuid": "{77f392fb-c1eb-57da-a1b1-e7acf9239fb8}",
+        "InitializationRange": {
+            "Max": 0,
+            "Min": 0
+        },
+        "InitializationType": 0,
+        "InitializationValue": "0",
+        "NewArray": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "8Bit Mask",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "NumberOfComponents": 1,
+        "ScalarType": 1
+    },
+    "09": {
+        "ConditionalArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "CT Mask",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Replace Value in Array (Conditional)",
+        "Filter_Name": "ConditionalSetValue",
+        "Filter_Uuid": "{47cafe63-83cc-5826-9521-4fb5bea684ef}",
+        "ReplaceValue": 1,
+        "SelectedArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "8Bit Mask",
+            "Data Container Name": "Tensile Bar CT Partial"
+        }
+    },
+    "10": {
+        "FilterVersion": "2.0.937",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Mask Image Filter",
+        "Filter_Name": "ITKMaskImage",
+        "Filter_Uuid": "{97102d65-9c32-576a-9177-c59d958bad10}",
+        "MaskCellArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "8Bit Mask",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "NewCellArrayName": "Density Masked",
+        "OutsideValue": 0,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "ImageData",
+            "Data Container Name": "Tensile Bar CT Partial"
+        }
+    },
+    "11": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "8Bit Mask",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        501,
+                                        501,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CT Mask",
+                                    "Object Type": "bool",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        501,
+                                        501,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Density Masked",
+                                    "Object Type": "uint16_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        501,
+                                        501,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Gradient Magnitude",
+                                    "Object Type": "float",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        501,
+                                        501,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "ImageData",
+                                    "Object Type": "uint16_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        501,
+                                        501,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Median Density",
+                                    "Object Type": "uint16_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        501,
+                                        501,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "CellData",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CT Partial",
+                    "Type": 0
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "12": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Pipeline Annotation",
+        "Filter_Name": "PipelineAnnotation",
+        "Filter_Uuid": "{8cc2198b-6a9d-5bf4-b8c0-b0878bb57f10}",
+        "Summary": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">General alignment with the CAD target performed with Rotate Sample Reference Frame and Set Origin and Spacing. </p></body></html>"
+    },
+    "13": {
+        "CellAttributeMatrixPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Rotate Sample Reference Frame",
+        "Filter_Name": "RotateSampleRefFrame",
+        "Filter_Uuid": "{e25d9b4c-2b37-578c-b1de-cf7032b5ef19}",
+        "RotationAngle": 164,
+        "RotationAxis": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+        },
+        "RotationRepresentationChoice": 0,
+        "RotationTable": {
+            "Column Headers": [
+            ],
+            "DefaultColCount": 3,
+            "DefaultRowCount": 3,
+            "HasDynamicCols": false,
+            "HasDynamicRows": false,
+            "MinColCount": 3,
+            "MinRowCount": 3,
+            "Row Headers": [
+            ],
+            "Table Data": [
+                [
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    1
+                ]
+            ]
+        }
+    },
+    "14": {
+        "ChangeOrigin": 1,
+        "ChangeResolution": 0,
+        "DataContainerName": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Set Origin & Spacing (Image)",
+        "Filter_Name": "SetOriginResolutionImageGeom",
+        "Filter_Uuid": "{6d3a3852-6251-5d2e-b749-6257fd0d8951}",
+        "Origin": {
+            "x": -1,
+            "y": 17,
+            "z": 39
+        },
+        "Spacing": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+        }
+    },
+    "15": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Pipeline Annotation",
+        "Filter_Name": "PipelineAnnotation",
+        "Filter_Uuid": "{8cc2198b-6a9d-5bf4-b8c0-b0878bb57f10}",
+        "Summary": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">This section classifies anomalies within the micro-CT data using Otsu's method (Section 4.0).</p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Grayscale fillhole removes local minima</p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Attribute array calculator subtracts the density array from the fillhole array leaving only the local minima </p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Otsu Multiple Thresholds filter segregates the local minima into a seperate class </p></body></html>"
+    },
+    "16": {
+        "FilterVersion": "2.0.937",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Grayscale Fillhole Image Filter",
+        "Filter_Name": "ITKGrayscaleFillholeImage",
+        "Filter_Uuid": "{54c8dd45-88c4-5d4b-8a39-e3cc595e1cf8}",
+        "FullyConnected": 1,
+        "NewCellArrayName": "Fill Hole",
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "Density Masked",
+            "Data Container Name": "Tensile Bar CT Partial"
+        }
+    },
+    "17": {
+        "CalculatedArray": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "Pores Light Up",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Attribute Array Calculator",
+        "Filter_Name": "ArrayCalculator",
+        "Filter_Uuid": "{7ff0ebb3-7b0d-5ff7-b9d8-5147031aca10}",
+        "InfixEquation": "Fill Hole-Density Masked",
+        "ScalarType": 9,
+        "SelectedAttributeMatrix": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "Units": 1
+    },
+    "18": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CT Mask",
+                                    "Object Type": "bool",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Density Masked",
+                                    "Object Type": "uint16_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Fill Hole",
+                                    "Object Type": "uint16_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Pores Light Up",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "CellData",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CT Partial",
+                    "Type": 0
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "19": {
+        "FilterVersion": "2.0.937",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Otsu Multiple Thresholds Image Filter",
+        "Filter_Name": "ITKOtsuMultipleThresholdsImage",
+        "Filter_Uuid": "{6e66563a-edcf-5e11-bc1d-ceed36d8493f}",
+        "LabelOffset": 0,
+        "NewCellArrayName": "CTB1",
+        "NumberOfHistogramBins": 128,
+        "NumberOfThresholds": 1,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "Pores Light Up",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "ValleyEmphasis": 0
+    },
+    "20": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Pipeline Annotation",
+        "Filter_Name": "PipelineAnnotation",
+        "Filter_Uuid": "{8cc2198b-6a9d-5bf4-b8c0-b0878bb57f10}",
+        "Summary": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">This section creates a point cloud of the part boundary to use for registration (Section 3.1). </p></body></html>"
+    },
+    "21": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Read DREAM.3D Data File",
+        "Filter_Name": "DataContainerReader",
+        "Filter_Uuid": "{043cbde5-3878-5718-958f-ae75714df0df}",
+        "InputFile": "C:\\Users\\al4g2\\Documents\\_Metallurgical_Biopsy\\Tensile_Bar_CAD\\Tensile_Bar_CAD.dream3d",
+        "InputFileDataContainerArrayProxy": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "FaceAreas",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Tensile Bar CAD TriangleDataContainer/FaceData",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        3
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "FaceNormals",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Tensile Bar CAD TriangleDataContainer/FaceData",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 2,
+                            "Name": "FaceData",
+                            "Type": 2
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "Tensile Bar CAD TriangleDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 2,
+                            "Name": "Tensile Bar CAD Point Cloud",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "Tensile Bar CAD VertexDataContainer",
+                    "Type": 2
+                }
+            ]
+        },
+        "OverwriteExistingDataContainers": 0
+    },
+    "22": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Create Data Array",
+        "Filter_Name": "CreateDataArray",
+        "Filter_Uuid": "{77f392fb-c1eb-57da-a1b1-e7acf9239fb8}",
+        "InitializationRange": {
+            "Max": 0,
+            "Min": 0
+        },
+        "InitializationType": 0,
+        "InitializationValue": "0",
+        "NewArray": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "Array of 0s",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "NumberOfComponents": 1,
+        "ScalarType": 4
+    },
+    "23": {
+        "ConditionalArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "CT Mask",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Replace Value in Array (Conditional)",
+        "Filter_Name": "ConditionalSetValue",
+        "Filter_Uuid": "{47cafe63-83cc-5826-9521-4fb5bea684ef}",
+        "ReplaceValue": 1,
+        "SelectedArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "Array of 0s",
+            "Data Container Name": "Tensile Bar CT Partial"
+        }
+    },
+    "24": {
+        "FaceAttributeMatrixName": "FaceData",
+        "FaceLabelsArrayName": "FaceLabels",
+        "FeatureAttributeMatrixName": "FaceFeatureData",
+        "FeatureIdsArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "Array of 0s",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "FilterVersion": "6.6.274",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Quick Surface Mesh",
+        "Filter_Name": "QuickSurfaceMesh",
+        "Filter_Uuid": "{07b49e30-3900-5c34-862a-f1fb48bad568}",
+        "FixProblemVoxels": 1,
+        "NodeTypesArrayName": "NodeType",
+        "SelectedDataArrayPaths": [
+        ],
+        "SurfaceDataContainerName": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "TriangleDataContainer"
+        },
+        "VertexAttributeMatrixName": "VertexData"
+    },
+    "25": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceAreas",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        3
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceNormals",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CAD TriangleDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "Tensile Bar CAD Point Cloud",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CAD VertexDataContainer",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Array of 0s",
+                                    "Object Type": "int32_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CT Mask",
+                                    "Object Type": "bool",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTB1",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Density Masked",
+                                    "Object Type": "uint16_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Pores Light Up",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "CellData",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CT Partial",
+                    "Type": 0
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        2
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceLabels",
+                                    "Object Type": "int32_t",
+                                    "Path": "TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        },
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceFeatureData",
+                            "Type": 6
+                        },
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "NodeType",
+                                    "Object Type": "int8_t",
+                                    "Path": "TriangleDataContainer/VertexData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "VertexData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "TriangleDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                    ],
+                    "Flag": 2,
+                    "Name": "TripleLines",
+                    "Type": 999
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "26": {
+        "FilterVersion": "6.6.274",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Laplacian Smoothing",
+        "Filter_Name": "LaplacianSmoothing",
+        "Filter_Uuid": "{601c4885-c218-5da6-9fc7-519d85d241ad}",
+        "IterationSteps": 1,
+        "Lambda": 0.10000000149011612,
+        "MuFactor": -1.0299999713897705,
+        "QuadPointLambda": 0,
+        "SurfaceMeshFaceLabelsArrayPath": {
+            "Attribute Matrix Name": "FaceData",
+            "Data Array Name": "FaceLabels",
+            "Data Container Name": "TriangleDataContainer"
+        },
+        "SurfaceMeshNodeTypeArrayPath": {
+            "Attribute Matrix Name": "VertexData",
+            "Data Array Name": "NodeType",
+            "Data Container Name": "TriangleDataContainer"
+        },
+        "SurfacePointLambda": 0,
+        "SurfaceQuadPointLambda": 0,
+        "SurfaceTripleLineLambda": 0,
+        "TripleLineLambda": 0,
+        "UseTaubinSmoothing": 1
+    },
+    "27": {
+        "FilterVersion": "1.0.1320",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Extract Internal Surfaces from Triangle Geometry",
+        "Filter_Name": "ExtractInternalSurfacesFromTriangleGeometry",
+        "Filter_Uuid": "{52a069b4-6a46-5810-b0ec-e0693c636034}",
+        "InternalTrianglesName": "Internal Triangles",
+        "NodeTypesArrayPath": {
+            "Attribute Matrix Name": "VertexData",
+            "Data Array Name": "NodeType",
+            "Data Container Name": "TriangleDataContainer"
+        },
+        "TriangleDataContainerName": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "TriangleDataContainer"
+        }
+    },
+    "28": {
+        "FilterVersion": "6.6.274",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Generate Triangle Areas",
+        "Filter_Name": "TriangleAreaFilter",
+        "Filter_Uuid": "{a9900cc3-169e-5a1b-bcf4-7569e1950d41}",
+        "SurfaceMeshTriangleAreasArrayPath": {
+            "Attribute Matrix Name": "FaceData",
+            "Data Array Name": "Face Areas",
+            "Data Container Name": "Internal Triangles"
+        }
+    },
+    "29": {
+        "FilterVersion": "6.6.274",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Generate Triangle Normals",
+        "Filter_Name": "TriangleNormalFilter",
+        "Filter_Uuid": "{928154f6-e4bc-5a10-a9dd-1abb6a6c0f6b}",
+        "SurfaceMeshTriangleNormalsArrayPath": {
+            "Attribute Matrix Name": "FaceData",
+            "Data Array Name": "FaceNormals",
+            "Data Container Name": "Internal Triangles"
+        }
+    },
+    "30": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Face Areas",
+                                    "Object Type": "double",
+                                    "Path": "Internal Triangles/FaceData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        2
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceLabels",
+                                    "Object Type": "int32_t",
+                                    "Path": "Internal Triangles/FaceData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        3
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceNormals",
+                                    "Object Type": "double",
+                                    "Path": "Internal Triangles/FaceData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        },
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceFeatureData",
+                            "Type": 6
+                        },
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "NodeType",
+                                    "Object Type": "int8_t",
+                                    "Path": "Internal Triangles/VertexData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "VertexData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Internal Triangles",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceAreas",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        3
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceNormals",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CAD TriangleDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "Tensile Bar CAD Point Cloud",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CAD VertexDataContainer",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Array of 0s",
+                                    "Object Type": "int32_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CT Mask",
+                                    "Object Type": "bool",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTB1",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Density Masked",
+                                    "Object Type": "uint16_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Pores Light Up",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "CellData",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CT Partial",
+                    "Type": 0
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        2
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceLabels",
+                                    "Object Type": "int32_t",
+                                    "Path": "TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        },
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceFeatureData",
+                            "Type": 6
+                        },
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "NodeType",
+                                    "Object Type": "int8_t",
+                                    "Path": "TriangleDataContainer/VertexData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "VertexData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "TriangleDataContainer",
+                    "Type": 4
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "31": {
+        "FilterVersion": "1.0.1320",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Point Sample Triangle Geometry",
+        "Filter_Name": "PointSampleTriangleGeometry",
+        "Filter_Uuid": "{119861c5-e303-537e-b210-2e62936222e9}",
+        "MaskArrayPath": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": ""
+        },
+        "NumberOfSamples": 100000,
+        "ParentGeometry": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": ""
+        },
+        "SamplesNumberType": 0,
+        "SelectedDataArrayPaths": [
+        ],
+        "TriangleAreasArrayPath": {
+            "Attribute Matrix Name": "FaceData",
+            "Data Array Name": "Face Areas",
+            "Data Container Name": "Internal Triangles"
+        },
+        "TriangleGeometry": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "Internal Triangles"
+        },
+        "UseMask": 0,
+        "VertexAttributeMatrixName": "Tensile Bar CT Partial Point Cloud",
+        "VertexGeometry": "Tensile Bar CT Partial Point Cloud"
+    },
+    "32": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Face Areas",
+                                    "Object Type": "double",
+                                    "Path": "Internal Triangles/FaceData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        2
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceLabels",
+                                    "Object Type": "int32_t",
+                                    "Path": "Internal Triangles/FaceData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        3
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceNormals",
+                                    "Object Type": "double",
+                                    "Path": "Internal Triangles/FaceData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        },
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceFeatureData",
+                            "Type": 6
+                        },
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "NodeType",
+                                    "Object Type": "int8_t",
+                                    "Path": "Internal Triangles/VertexData/",
+                                    "Tuple Dimensions": [
+                                        0
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "VertexData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "Internal Triangles",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceAreas",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        3
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceNormals",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CAD TriangleDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "Tensile Bar CAD Point Cloud",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CAD VertexDataContainer",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Array of 0s",
+                                    "Object Type": "int32_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CT Mask",
+                                    "Object Type": "bool",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTB1",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Density Masked",
+                                    "Object Type": "uint16_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Pores Light Up",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "CellData",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CT Partial",
+                    "Type": 0
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "Tensile Bar CT Partial Point Cloud",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CT Partial Point Cloud",
+                    "Type": 2
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "33": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Pipeline Annotation",
+        "Filter_Name": "PipelineAnnotation",
+        "Filter_Uuid": "{8cc2198b-6a9d-5bf4-b8c0-b0878bb57f10}",
+        "Summary": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">This section performs registration using ICP to align the micro-CT dataset to the CAD file (Section 3.1). </p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Iterative closest point computes a transformation matrix using the surface point clouds of both parts</p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Apply transformation to geometry peforms the transformation on the CT image array</p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"
+    },
+    "34": {
+        "ApplyTransform": 1,
+        "FilterVersion": "1.0.1320",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Iterative Closest Point",
+        "Filter_Name": "IterativeClosestPoint",
+        "Filter_Uuid": "{6c8fb24b-5b12-551c-ba6d-ae2fa7724764}",
+        "Iterations": 100,
+        "MovingVertexGeometry": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar CT Partial Point Cloud"
+        },
+        "TargetVertexGeometry": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar CAD VertexDataContainer"
+        },
+        "TransformArrayName": "Transform to CAD",
+        "TransformAttributeMatrixName": "TransformAttributeMatrix"
+    },
+    "35": {
+        "CellAttributeMatrixPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar CT Partial"
+        },
+        "ComputedTransformationMatrix": {
+            "Attribute Matrix Name": "TransformAttributeMatrix",
+            "Data Array Name": "Transform to CAD",
+            "Data Container Name": "Tensile Bar CT Partial Point Cloud"
+        },
+        "DataArraySelection": [
+        ],
+        "FilterVersion": "1.0.1320",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Apply Transformation to Geometry",
+        "Filter_Name": "ApplyTransformationToGeometry",
+        "Filter_Uuid": "{c681caf4-22f2-5885-bbc9-a0476abc72eb}",
+        "InterpolationType": 0,
+        "ManualTransformationMatrix": {
+            "Column Headers": [
+            ],
+            "DefaultColCount": 0,
+            "DefaultRowCount": 0,
+            "HasDynamicCols": false,
+            "HasDynamicRows": false,
+            "MinColCount": 0,
+            "MinRowCount": 0,
+            "Row Headers": [
+            ],
+            "Table Data": [
+                [
+                    1,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ]
+        },
+        "RotationAngle": 0,
+        "RotationAxis": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+        },
+        "Scale": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "TransformationMatrixType": 1,
+        "Translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "UseDataArraySelection": 0
+    },
+    "36": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Pipeline Annotation",
+        "Filter_Name": "PipelineAnnotation",
+        "Filter_Uuid": "{8cc2198b-6a9d-5bf4-b8c0-b0878bb57f10}",
+        "Summary": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">The individual erors are measured from the surface point cloud in the micro-CT dataset to the triangles in the CAD file using Vertex to Triangle Distances (Section 3.2). </p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"
+    },
+    "37": {
+        "DecimationFreq": 0.10000000149011612,
+        "FilterVersion": "1.0.1320",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Decimate Point Cloud",
+        "Filter_Name": "DecimatePointCloud",
+        "Filter_Uuid": "{5cbd9d8e-e2eb-59e7-be63-6ab9deeed8d2}",
+        "VertexAttrMatPath": {
+            "Attribute Matrix Name": "Tensile Bar CT Partial Point Cloud",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar CT Partial Point Cloud"
+        }
+    },
+    "38": {
+        "ClosestTriangleIdArrayPath": {
+            "Attribute Matrix Name": "Tensile Bar CT Partial Point Cloud",
+            "Data Array Name": "ClosestTriangleId",
+            "Data Container Name": "Tensile Bar CT Partial Point Cloud"
+        },
+        "DistancesArrayPath": {
+            "Attribute Matrix Name": "Tensile Bar CT Partial Point Cloud",
+            "Data Array Name": "CT Partial Errors",
+            "Data Container Name": "Tensile Bar CT Partial Point Cloud"
+        },
+        "FilterVersion": "1.0.1320",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Find Vertex to Triangle Distances",
+        "Filter_Name": "FindVertexToTriangleDistances",
+        "Filter_Uuid": "{fcdde553-36b4-5731-bc88-fc499806cb4e}",
+        "TriangleDataContainer": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar CAD TriangleDataContainer"
+        },
+        "TriangleNormalsArrayPath": {
+            "Attribute Matrix Name": "FaceData",
+            "Data Array Name": "FaceNormals",
+            "Data Container Name": "Tensile Bar CAD TriangleDataContainer"
+        },
+        "VertexDataContainer": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "Tensile Bar CT Partial Point Cloud"
+        }
+    },
+    "39": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceAreas",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        3
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "FaceNormals",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CAD TriangleDataContainer/FaceData/",
+                                    "Tuple Dimensions": [
+                                        48274
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "FaceData",
+                            "Type": 2
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "Tensile Bar CAD TriangleDataContainer",
+                    "Type": 4
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                            ],
+                            "Flag": 0,
+                            "Name": "Tensile Bar CAD Point Cloud",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "Tensile Bar CAD VertexDataContainer",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Array of 0s",
+                                    "Object Type": "int32_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "CT Mask",
+                                    "Object Type": "bool",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTB1",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Density Masked",
+                                    "Object Type": "uint16_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Pores Light Up",
+                                    "Object Type": "double",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "CellData",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CT Partial",
+                    "Type": 0
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CT Partial Errors",
+                                    "Object Type": "float",
+                                    "Path": "Tensile Bar CT Full Point Cloud/Tensile Bar CT Full Point Cloud/",
+                                    "Tuple Dimensions": [
+                                        100000
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "ClosestTriangleId",
+                                    "Object Type": "int64_t",
+                                    "Path": "Tensile Bar CT Full Point Cloud/Tensile Bar CT Full Point Cloud/",
+                                    "Tuple Dimensions": [
+                                        100000
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "Tensile Bar CT Partial Point Cloud",
+                            "Type": 0
+                        },
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        4,
+                                        4
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Transform to CAD",
+                                    "Object Type": "float",
+                                    "Path": "Tensile Bar CT Partial Point Cloud/TransformAttributeMatrix/",
+                                    "Tuple Dimensions": [
+                                        1
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "TransformAttributeMatrix",
+                            "Type": 13
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CT Partial Point Cloud",
+                    "Type": 2
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "40": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Write DREAM.3D Data File",
+        "Filter_Name": "DataContainerWriter",
+        "Filter_Uuid": "{3fcd4c43-9d75-5b86-aad4-4441bc914f37}",
+        "OutputFile": "C:/Users/al4g2/Documents/_Metallurgical_Biopsy_Demos/Tensile_Bar_CT_Partial.dream3d",
+        "WriteTimeSeries": 0,
+        "WriteXdmfFile": 1
+    },
+    "41": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTB1",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Density Masked",
+                                    "Object Type": "uint16_t",
+                                    "Path": "Tensile Bar CT Partial/CellData/",
+                                    "Tuple Dimensions": [
+                                        619,
+                                        619,
+                                        1014
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "CellData",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Tensile Bar CT Partial",
+                    "Type": 0
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CT Partial Errors",
+                                    "Object Type": "float",
+                                    "Path": "Tensile Bar CT Partial Point Cloud/Tensile Bar CT Partial Point Cloud/",
+                                    "Tuple Dimensions": [
+                                        100000
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "ClosestTriangleId",
+                                    "Object Type": "int64_t",
+                                    "Path": "Tensile Bar CT Partial Point Cloud/Tensile Bar CT Partial Point Cloud/",
+                                    "Tuple Dimensions": [
+                                        100000
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "Tensile Bar CT Partial Point Cloud",
+                            "Type": 0
+                        },
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        4,
+                                        4
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Transform to CAD",
+                                    "Object Type": "float",
+                                    "Path": "Tensile Bar CT Partial Point Cloud/TransformAttributeMatrix/",
+                                    "Tuple Dimensions": [
+                                        1
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "TransformAttributeMatrix",
+                            "Type": 13
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "Tensile Bar CT Partial Point Cloud",
+                    "Type": 2
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "42": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Write DREAM.3D Data File",
+        "Filter_Name": "DataContainerWriter",
+        "Filter_Uuid": "{3fcd4c43-9d75-5b86-aad4-4441bc914f37}",
+        "OutputFile": "C:/Users/al4g2/Documents/_Metallurgical_Biopsy_Demos/Tensile_Bar_CT_Partial_Images.dream3d",
+        "WriteTimeSeries": 0,
+        "WriteXdmfFile": 1
+    },
+    "PipelineBuilder": {
+        "Name": "Tensile_Bar_CT_Partial",
+        "Number_Filters": 43,
+        "Version": 6
+    }
+}
