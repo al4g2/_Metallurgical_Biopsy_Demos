@@ -915,7 +915,7 @@
                                     "Component Dimensions": [
                                         1
                                     ],
-                                    "Flag": 0,
+                                    "Flag": 2,
                                     "Name": "Mask 32bt",
                                     "Object Type": "int32_t",
                                     "Path": "Container/Matrix/",
@@ -930,7 +930,7 @@
                                     "Component Dimensions": [
                                         1
                                     ],
-                                    "Flag": 0,
+                                    "Flag": 2,
                                     "Name": "Mask 8bt Fillhole",
                                     "Object Type": "uint8_t",
                                     "Path": "Container/Matrix/",
@@ -945,7 +945,7 @@
                                     "Component Dimensions": [
                                         1
                                     ],
-                                    "Flag": 0,
+                                    "Flag": 2,
                                     "Name": "Mask Boolean",
                                     "Object Type": "bool",
                                     "Path": "Container/Matrix/",
@@ -960,7 +960,7 @@
                                     "Component Dimensions": [
                                         1
                                     ],
-                                    "Flag": 0,
+                                    "Flag": 2,
                                     "Name": "Mask Holes 32bt",
                                     "Object Type": "int32_t",
                                     "Path": "Container/Matrix/",
@@ -990,7 +990,7 @@
                                     "Component Dimensions": [
                                         1
                                     ],
-                                    "Flag": 0,
+                                    "Flag": 2,
                                     "Name": "Pores",
                                     "Object Type": "uint8_t",
                                     "Path": "Container/Matrix/",
@@ -1005,7 +1005,7 @@
                                     "Component Dimensions": [
                                         1
                                     ],
-                                    "Flag": 0,
+                                    "Flag": 2,
                                     "Name": "Pores 32bt",
                                     "Object Type": "int32_t",
                                     "Path": "Container/Matrix/",
@@ -1020,7 +1020,7 @@
                                     "Component Dimensions": [
                                         1
                                     ],
-                                    "Flag": 0,
+                                    "Flag": 2,
                                     "Name": "Pores Boolean",
                                     "Object Type": "bool",
                                     "Path": "Container/Matrix/",
@@ -1035,7 +1035,7 @@
                                     "Component Dimensions": [
                                         1
                                     ],
-                                    "Flag": 0,
+                                    "Flag": 2,
                                     "Name": "RAT",
                                     "Object Type": "bool",
                                     "Path": "Container/Matrix/",
@@ -1180,128 +1180,8 @@
                                         1
                                     ],
                                     "Flag": 0,
-                                    "Name": "Mask 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask 8bt Fillhole",
-                                    "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask Boolean",
-                                    "Object Type": "bool",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask Holes 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
                                     "Name": "Masked SEM",
                                     "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores",
-                                    "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores Boolean",
-                                    "Object Type": "bool",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "RAT",
-                                    "Object Type": "bool",
                                     "Path": "Container/Matrix/",
                                     "Tuple Dimensions": [
                                         5101,
@@ -1505,128 +1385,8 @@
                                         1
                                     ],
                                     "Flag": 0,
-                                    "Name": "Mask 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask 8bt Fillhole",
-                                    "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask Boolean",
-                                    "Object Type": "bool",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask Holes 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
                                     "Name": "Masked SEM",
                                     "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores",
-                                    "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores Boolean",
-                                    "Object Type": "bool",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "RAT",
-                                    "Object Type": "bool",
                                     "Path": "Container/Matrix/",
                                     "Tuple Dimensions": [
                                         5101,
@@ -1855,128 +1615,8 @@
                                         1
                                     ],
                                     "Flag": 0,
-                                    "Name": "Mask 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask 8bt Fillhole",
-                                    "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask Boolean",
-                                    "Object Type": "bool",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask Holes 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
                                     "Name": "Masked SEM",
                                     "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores",
-                                    "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores Boolean",
-                                    "Object Type": "bool",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "RAT",
-                                    "Object Type": "bool",
                                     "Path": "Container/Matrix/",
                                     "Tuple Dimensions": [
                                         5101,
@@ -2179,128 +1819,8 @@
                                         1
                                     ],
                                     "Flag": 0,
-                                    "Name": "Mask 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask 8bt Fillhole",
-                                    "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask Boolean",
-                                    "Object Type": "bool",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask Holes 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
                                     "Name": "Masked SEM",
                                     "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores",
-                                    "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores Boolean",
-                                    "Object Type": "bool",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "RAT",
-                                    "Object Type": "bool",
                                     "Path": "Container/Matrix/",
                                     "Tuple Dimensions": [
                                         5101,
@@ -2456,6 +1976,60 @@
         "InputFile": "C:\\Users\\al4g2\\Documents\\_Metallurgical_Biopsy\\Tensile_Bar_CT_Partial\\10_CT N1 Point Cloud.dream3d",
         "InputFileDataContainerArrayProxy": {
             "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Boundary Combo Cells",
+                                    "Object Type": "DataArray<int8_t>",
+                                    "Path": "/DataContainers/CT Combo Point Cloud/CellData",
+                                    "Tuple Dimensions": [
+                                        1879
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 2,
+                            "Name": "CellData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "CT Combo Point Cloud",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Boundary Outer Cells",
+                                    "Object Type": "DataArray<int8_t>",
+                                    "Path": "/DataContainers/CT Outer Point Cloud/CellData",
+                                    "Tuple Dimensions": [
+                                        850
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 2,
+                            "Name": "CellData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "CT Outer Point Cloud",
+                    "Type": 2
+                }
             ]
         },
         "OverwriteExistingDataContainers": 0
@@ -2493,61 +2067,55 @@
                                         1
                                     ],
                                     "Flag": 0,
-                                    "Name": "Mask 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
+                                    "Name": "Boundary Combo Cells",
+                                    "Object Type": "int8_t",
+                                    "Path": "CT Combo Point Cloud/CellData/",
                                     "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
+                                        1879
                                     ],
                                     "Version": 2
-                                },
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "CellData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "CT Combo Point Cloud",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
                                 {
                                     "Component Dimensions": [
                                         1
                                     ],
                                     "Flag": 0,
-                                    "Name": "Mask 8bt Fillhole",
-                                    "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
+                                    "Name": "Boundary Outer Cells",
+                                    "Object Type": "int8_t",
+                                    "Path": "CT Outer Point Cloud/CellData/",
                                     "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
+                                        850
                                     ],
                                     "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask Boolean",
-                                    "Object Type": "bool",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask Holes 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "CellData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "CT Outer Point Cloud",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
                                 {
                                     "Component Dimensions": [
                                         1
@@ -2555,66 +2123,6 @@
                                     "Flag": 0,
                                     "Name": "Masked SEM",
                                     "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores",
-                                    "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores Boolean",
-                                    "Object Type": "bool",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "RAT",
-                                    "Object Type": "bool",
                                     "Path": "Container/Matrix/",
                                     "Tuple Dimensions": [
                                         5101,
@@ -2747,6 +2255,27 @@
                             "Flag": 0,
                             "Name": "Matrix",
                             "Type": 0
+                        },
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        4,
+                                        4
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Transform",
+                                    "Object Type": "float",
+                                    "Path": "N1 Outer Point Cloud/TransformAttributeMatrix/",
+                                    "Tuple Dimensions": [
+                                        1
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "TransformAttributeMatrix",
+                            "Type": 13
                         }
                     ],
                     "Flag": 0,
@@ -2838,16 +2367,6 @@
         "UseDataArraySelection": 0
     },
     "55": {
-        "FilterVersion": "2.0.436",
-        "Filter_Enabled": true,
-        "Filter_Human_Label": "Write DREAM.3D Data File",
-        "Filter_Name": "DataContainerWriter",
-        "Filter_Uuid": "{3fcd4c43-9d75-5b86-aad4-4441bc914f37}",
-        "OutputFile": "C:/Users/al4g2/Documents/_Metallurgical_Biopsy_Demos/Tensile_Bar_SEM_N1.dream3d",
-        "WriteTimeSeries": 0,
-        "WriteXdmfFile": 1
-    },
-    "56": {
         "DataArraysToRemove": {
             "Data Containers": [
                 {
@@ -2859,61 +2378,55 @@
                                         1
                                     ],
                                     "Flag": 0,
-                                    "Name": "Mask 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
+                                    "Name": "Boundary Combo Cells",
+                                    "Object Type": "int8_t",
+                                    "Path": "CT Combo Point Cloud/CellData/",
                                     "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
+                                        1879
                                     ],
                                     "Version": 2
-                                },
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "CellData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "CT Combo Point Cloud",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
                                 {
                                     "Component Dimensions": [
                                         1
                                     ],
                                     "Flag": 0,
-                                    "Name": "Mask 8bt Fillhole",
-                                    "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
+                                    "Name": "Boundary Outer Cells",
+                                    "Object Type": "int8_t",
+                                    "Path": "CT Outer Point Cloud/CellData/",
                                     "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
+                                        850
                                     ],
                                     "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask Boolean",
-                                    "Object Type": "bool",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Mask Holes 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "CellData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "CT Outer Point Cloud",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
                                 {
                                     "Component Dimensions": [
                                         1
@@ -2921,66 +2434,6 @@
                                     "Flag": 0,
                                     "Name": "Masked SEM",
                                     "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores",
-                                    "Object Type": "uint8_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores 32bt",
-                                    "Object Type": "int32_t",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "Pores Boolean",
-                                    "Object Type": "bool",
-                                    "Path": "Container/Matrix/",
-                                    "Tuple Dimensions": [
-                                        5101,
-                                        5518,
-                                        1
-                                    ],
-                                    "Version": 2
-                                },
-                                {
-                                    "Component Dimensions": [
-                                        1
-                                    ],
-                                    "Flag": 0,
-                                    "Name": "RAT",
-                                    "Object Type": "bool",
                                     "Path": "Container/Matrix/",
                                     "Tuple Dimensions": [
                                         5101,
@@ -3035,7 +2488,7 @@
                             "Type": 0
                         }
                     ],
-                    "Flag": 0,
+                    "Flag": 2,
                     "Name": "N1 Combo Point Cloud",
                     "Type": 2
                 },
@@ -3075,7 +2528,7 @@
                             "Type": 0
                         }
                     ],
-                    "Flag": 0,
+                    "Flag": 2,
                     "Name": "N1 Inner Point Cloud",
                     "Type": 2
                 },
@@ -3113,9 +2566,30 @@
                             "Flag": 0,
                             "Name": "Matrix",
                             "Type": 0
+                        },
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        4,
+                                        4
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Transform",
+                                    "Object Type": "float",
+                                    "Path": "N1 Outer Point Cloud/TransformAttributeMatrix/",
+                                    "Tuple Dimensions": [
+                                        1
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "TransformAttributeMatrix",
+                            "Type": 13
                         }
                     ],
-                    "Flag": 0,
+                    "Flag": 2,
                     "Name": "N1 Outer Point Cloud",
                     "Type": 2
                 }
@@ -3127,7 +2601,111 @@
         "Filter_Name": "RemoveArrays",
         "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
     },
+    "56": {
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Write DREAM.3D Data File",
+        "Filter_Name": "DataContainerWriter",
+        "Filter_Uuid": "{3fcd4c43-9d75-5b86-aad4-4441bc914f37}",
+        "OutputFile": "C:/Users/al4g2/Documents/_Metallurgical_Biopsy_Demos/Tensile_Bar_SEM_N1.dream3d",
+        "WriteTimeSeries": 0,
+        "WriteXdmfFile": 1
+    },
     "57": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Boundary Combo Cells",
+                                    "Object Type": "int8_t",
+                                    "Path": "CT Combo Point Cloud/CellData/",
+                                    "Tuple Dimensions": [
+                                        1879
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "CellData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "CT Combo Point Cloud",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Boundary Outer Cells",
+                                    "Object Type": "int8_t",
+                                    "Path": "CT Outer Point Cloud/CellData/",
+                                    "Tuple Dimensions": [
+                                        850
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "CellData",
+                            "Type": 0
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "CT Outer Point Cloud",
+                    "Type": 2
+                },
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Masked SEM",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Container/Matrix/",
+                                    "Tuple Dimensions": [
+                                        5101,
+                                        5518,
+                                        1
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Container",
+                    "Type": 0
+                }
+            ]
+        },
+        "FilterVersion": "2.0.436",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "58": {
         "FilterVersion": "2.0.436",
         "Filter_Enabled": true,
         "Filter_Human_Label": "Write DREAM.3D Data File",
@@ -3139,7 +2717,7 @@
     },
     "PipelineBuilder": {
         "Name": "Tensile_Bar_SEM_N1",
-        "Number_Filters": 58,
+        "Number_Filters": 59,
         "Version": 6
     }
 }
