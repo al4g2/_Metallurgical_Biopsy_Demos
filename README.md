@@ -1,6 +1,7 @@
 # _Metallurgical_Biopsy_Demos
 
 Metallurgical Biopsy in Laser Powder Bed Fusion with Unsupervised Image Registration and Anomaly Classification
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4952581
 
 DREAM.3D pipelines supporting Metallurgical biopsy using image stack registration and data fusion for additive manufacturing
 
